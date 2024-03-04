@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { StudentsService } from '../students.service';
+import { StudentsService } from '../../students.service';
 import { CommonModule } from '@angular/common'; // lo necesitamos para poder usar la instrucción NgFor
-
+import { FormsModule } from '@angular/forms'; // necesario para el two way binding
 
 @Component({
   selector: 'app-students-list',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './students-list.component.html',
   styleUrl: './students-list.component.css'
 })

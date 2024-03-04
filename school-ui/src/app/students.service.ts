@@ -14,4 +14,8 @@ export class StudentsService {
   getStudents(): Observable<any> {
     return this.http.get(this.API_URL);
   }
+
+  createStudent(student: any) {
+    return this.http.post(this.API_URL, student);
+  }
 }
