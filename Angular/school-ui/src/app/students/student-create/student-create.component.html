@@ -1,0 +1,12 @@
+<form (ngSubmit)="onSubmit()">
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" [(ngModel)]="student.name" required>
+
+    <label for="dni">DNI:</label>
+    <input type="text" id="dni" name="dni" [(ngModel)]="student.dni" required>
+
+    <label for="birthDate">Fecha de nacimiento:</label>
+    <input type="date" id="birthDate" name="birthDate" [(ngModel)]="student.birthDate" required>
+
+    <button type="submit">Crear estudiante</button>
+</form>
