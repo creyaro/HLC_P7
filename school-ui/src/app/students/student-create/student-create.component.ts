@@ -26,9 +26,11 @@ export class StudentCreateComponent {
   onSubmit() {
     this.studentsService.createStudent(this.student).subscribe(e => {
       // Show success msg
-      this.message = '';
+      this.message = 'Se hizo correctamente';
+      console.log(this.message)
       console.log(e);
     }, err => {
+      this.message = 'Error';
       console.log(err);
     });
   }
